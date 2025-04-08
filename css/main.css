@@ -455,7 +455,7 @@ footer .footer_sns {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: 5rem;
+	gap: 7rem;
 }
 
 .flip_card {
