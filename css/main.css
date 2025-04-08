@@ -148,7 +148,7 @@ header h1 a {
 	display: block;
 	width: 13rem;
 	aspect-ratio: 1 / 0.3473;
-	background: url(/images/logo.svg) no-repeat;	
+	background: url(./images/logo.svg) no-repeat;	
 	background-position: left top;
 	background-size: cover;
 }
@@ -492,15 +492,15 @@ footer .footer_sns {
 	align-items: center;	
 }
 .esg_front01 {
-	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(/images/esg01.jpg) no-repeat center;
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(./images/esg01.jpg) no-repeat center;
 	background-size: cover;
 }
 .esg_front02 {
-	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(/images/esg02.jpg) no-repeat center;
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(./images/esg02.jpg) no-repeat center;
 	background-size: cover;
 }
 .esg_front03 {
-	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/images/esg03.jpg) no-repeat center;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(./images/esg03.jpg) no-repeat center;
 	background-size: cover;
 }
 .flip_card_front p {
