@@ -121,15 +121,16 @@ const productSwiper = new Swiper('.product_swiper', {
 const ani2 = gsap.timeline();
 
 ani2
-  .from('.card01', {x: 0, autoAlpha: 0},1)
-  .from('.card02', {x: 0, autoAlpha: 0},1)
-  .from('.card03', {x: 0, autoAlpha: 0},1)
+  .from('.card01', {x: -150, autoAlpha: 0},1)
+  .from('.card02', {x: -150, autoAlpha: 0},2)
+  .from('.card03', {x: -150, autoAlpha: 0},3)
 
 ScrollTrigger.create({
   animation: ani2,
   trigger: '.esg',
-  pin: true,scrub: true,
-  markers: true,
+  pin: true,
+  scrub: 3,
+  // markers: true,
 })
 
 
