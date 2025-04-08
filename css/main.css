@@ -352,7 +352,7 @@ footer .footer_sns {
 .product_swiper {
 	position: relative;
 	width: 80%;height: auto;
-	border: 1px solid red;
+	/* border: 1px solid red; */
 }
 .product_swiper li {
 	display: flex;
@@ -364,7 +364,7 @@ footer .footer_sns {
 	gap: 1rem;
 	padding: 8rem;
 	width: 50%;
-	border: 1px solid hotpink;
+	/* border: 1px solid hotpink; */
 }
 .product_swiper  .product_txt strong {
 	font-size: 4rem;	
@@ -379,7 +379,7 @@ footer .footer_sns {
 	width: 50%;
 	display: flex;justify-content: center;
 	align-items: center;
-	border: 1px solid green;
+	/* border: 1px solid green; */
 }
 .product_swiper .product_img img {
 }
