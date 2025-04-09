@@ -1,11 +1,15 @@
 /* 프로덕트 스와이퍼 */
 
-const productSwiper = new Swiper('.product_swiper', {
+  const productSwiper = new Swiper('.product_swiper', {
    // Optional parameters
-   loop: true,
-   centeredSlides: true,
+  autoplay: {
+  delay: 5000,
+  },
+  speed: 1500,
+  loop: true,
+  centeredSlides: true,
    
-   pagination: {
+  pagination: {
     el: '.swiper-pagination',
     type: 'fraction'
   },
@@ -14,22 +18,26 @@ const productSwiper = new Swiper('.product_swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-   breakpoints: {     
-     768: {
-       slidesPerView: 1,      
-     },
-     1024: {
-       slidesPerView: 1,
-     },
-     1280: {
-       slidesPerView: 1,
+  breakpoints: {     
+    768: {
+      slidesPerView: 1,      
+    },
+    1024: {
+      slidesPerView: 1,
+    },
+    1280: {
+      slidesPerView: 1,
      }
-   }
+  }
  });
   
   /* SNS 스와이퍼 */
   const snsSwiper = new Swiper('.sns_swiper', {
    // Optional parameters
+  autoplay: {
+  delay: 5000,
+  },
+  speed: 1500,
   loop: true,
   centeredSlides: true,
   pagination: {
