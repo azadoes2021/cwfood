@@ -14,26 +14,20 @@ const productSwiper = new Swiper('.product_swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-   breakpoints: {
-     // when window width is >= 320px
+   breakpoints: {     
      768: {
-       slidesPerView: 1,
-       spaceBetween: 30
+       slidesPerView: 1,      
      },
-     // when window width is >= 480px
      1024: {
        slidesPerView: 1,
-      //  spaceBetween: 40
      },
-     // when window width is >= 640px
      1280: {
        slidesPerView: 1,
-      //  spaceBetween: 50
      }
    }
  });
   
-  
+  /* SNS 스와이퍼 */
   const snsSwiper = new Swiper('.sns_swiper', {
    // Optional parameters
   loop: true,
@@ -41,31 +35,19 @@ const productSwiper = new Swiper('.product_swiper', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-  },
-  // Navigation arrows
-  // navigation: {
-  //   nextEl: '.swiper-button-next',
-  //   prevEl: '.swiper-button-prev',
-  // },
-  // And if we need scrollbar
+  },  
   scrollbar: {
     el: '.swiper-scrollbar',
   },
   breakpoints: {
-    // when window width is >= 320px
     768: {
       slidesPerView: 3,
-      // spaceBetween: 30
     },
-    // when window width is >= 480px
     1024: {
       slidesPerView: 3,
-      // spaceBetween: 40
     },
-    // when window width is >= 640px
     1280: {
       slidesPerView: 5,
-      // spaceBetween: 50
     }
   }
 });
@@ -83,15 +65,39 @@ const productSwiper = new Swiper('.product_swiper', {
 
   });
   
+  /* 스크롤시 헤더 생김 */
   window.addEventListener('scroll', function() {
     if(window.scrollY > 900){
       header.classList.add('header_on')
     }else{
       header.classList.remove('header_on')
-    }
-    
+    }    
       //console.log(window.scrollY);
     });
+
+    /* ETC 기타제품 탭 및 콘텐츠박스 활성화 */
+    const tabs = document.querySelectorAll('.tabs li');
+    const contboxes = document.querySelectorAll('.contbox');
+    
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', (e) => {
+        e.preventDefault();
+    
+        // 탭 활성화 (active 클래스 추가/제거)
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+    
+        // 콘텐츠 박스 활성화
+        contboxes.forEach(box => box.classList.remove('contboxon'));
+        contboxes[index].classList.add('contboxon');
+      });
+    });
+    
+    // 초기 활성화 (선택 사항 - 첫 번째 탭과 콘텐츠를 보여줌)
+    if (tabs.length > 0 && contboxes.length > 0) {
+      tabs[0].classList.add('active');
+      contboxes[0].classList.add('contboxon');
+    }
 
 
   const langBtn = document.querySelector('.lang_wrap button')
@@ -117,7 +123,7 @@ const productSwiper = new Swiper('.product_swiper', {
 
 
 
-//02.
+//02. ESG 경영 애니메이션
 const ani2 = gsap.timeline();
 
 ani2

@@ -114,7 +114,7 @@ hgroup p {
 section {
 	padding: 12rem 0;
 }
-/* .dep2 {display: none; } */
+
 
 
 /* Header */
@@ -331,9 +331,6 @@ footer .footer_sns {
 }
 .main_visual video {
 	width: 100%;
-	/* position: relative;
-	top: 50%;
-	transform: translateY(-50%); */
 }
 .main_visual>p {
 	position: absolute;
@@ -353,11 +350,9 @@ footer .footer_sns {
 .product_swiper {
 	position: relative;
 	width: 80%;height: auto;
-	/* border: 1px solid red; */
 }
 .product_swiper li {
 	display: flex;
-	/* border: 1px solid #000; */
 }
 .product_swiper .product_txt {
 	display: flex;
@@ -365,7 +360,6 @@ footer .footer_sns {
 	gap: 1rem;
 	padding: 8rem;
 	width: 50%;
-	/* border: 1px solid hotpink; */
 }
 .product_swiper  .product_txt strong {
 	font-size: 4rem;	
@@ -380,7 +374,6 @@ footer .footer_sns {
 	width: 50%;
 	display: flex;justify-content: center;
 	align-items: center;
-	/* border: 1px solid green; */
 }
 .product_swiper .product_img img {
 }
@@ -401,7 +394,6 @@ footer .footer_sns {
 	text-align: center;
 	padding: 0.8rem;
 	border: 1px solid #000;
-	/* font-weight: bold; */
 	color: #000;
 	display: inline-flex;
     justify-content: center;
@@ -457,7 +449,6 @@ footer .footer_sns {
 	justify-content: center;
 	gap: 7rem;
 }
-
 .flip_card {
 	width: 50rem;
 	height: 50rem;
@@ -476,13 +467,11 @@ footer .footer_sns {
 	transform: rotateY(180deg)
 }
 .flip_card_front, .flip_card_back {
-
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	backface-visibility: hidden;
-	-webkit-backface-visibility: hidden;
-	
+	-webkit-backface-visibility: hidden;	
 	overflow: hidden;
 	border-radius: 20px;
 }
@@ -528,9 +517,7 @@ footer .footer_sns {
 }
 
 /* News */
-.news_wrap {
-	
-}
+
 .news_wrap ul {
 	display: flex;
 	flex-wrap: wrap;
@@ -554,21 +541,11 @@ footer .footer_sns {
 	font-weight: bold;
 	padding: 2rem 1rem 1rem 1rem;
 }
-.news_wrap ul li div p {
-	/* font-size: 2rem; */
-	/* font-weight: bold; */
+.news_wrap ul li div p {	
 	padding: 1rem;
 }
-.news_wrap ul li div span {
-	/* font-size: 2rem; */
-	/* font-weight: bold; */
+.news_wrap ul li div span {	
 	padding: 1rem;
-}
-.news_wrap .thumb_img {
-	/* width: 100%;
-	height: 100%;
-	object-fit : cover;
-	overflow: hidden; */
 }
 .news_wrap .thumb_img img{
 	width: 100%;
@@ -578,6 +555,44 @@ footer .footer_sns {
 .news_wrap .btn_wrap {
 	margin-top: 7rem;
 	text-align: center;
+}
+/* Etc */
+.etc .etc_tabs .tabs {
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+}
+.etc .etc_tabs .tabs>li {
+	padding: 1.2rem;
+	border-radius: 10px;
+	background: dodgerblue;
+	color: #eee;
+}
+.etc .etc_tabs ul.tabs li.active {
+	background: #eee;
+	color: dodgerblue;
+	text-decoration: underline dodgerblue 0.3rem;
+	text-underline-offset: 1rem;
+	font-weight: bold;
+}
+
+.etc_contents .contbox{
+	display: none;
+}
+.etc_contents .contboxon{
+	display: block;
+}
+.etc_contents .contbox ul {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 2.4rem;
+}
+.etc_contents .contbox ul li {
+	width: 20%;	
+}
+.etc_contents .contbox ul li div a img {
+	width: 100%;
+	object-fit: cover;
 }
 /* Job */
 .company {
@@ -637,6 +652,9 @@ footer .footer_sns {
 	.main_visual video {
 		height: 100%;width: auto;
 	}
+	.main_visual>p {
+    font-size: 6rem;
+}
 }
 @media (max-width:1280px) {
 	/* Default */
@@ -656,7 +674,9 @@ footer .footer_sns {
 	.news_wrap ul li {
     width: 100%;
 	}
-	
+	.etc_contents .contbox ul li {
+		width: 33.3%;
+}
 }
 @media screen and (max-width: 1024px) {
 	.allmenu_popup .dep1 {
@@ -681,14 +701,12 @@ footer .footer_sns {
 	.pcmo {
 		display: none;
 	}
+	
 }
 @media screen and  (max-width:768px) {
 	/* header */
 	.allmenu_popup .dep1 {
 		position: absolute;
-		/* top: 50%;
-		left: 51%;
-		transform: translate(-51%, -50%); */
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
@@ -716,6 +734,9 @@ footer .footer_sns {
 		left: 50%;transform:  translateX(-50%);
 		bottom: 0;
 		font-size: 2rem;
+	}
+	.etc_contents .contbox ul li {
+		width: 50%;	
 	}
 }
 @media screen and  (max-width:500px) { /*430*/
@@ -770,4 +791,12 @@ footer .footer_sns {
 		font-size: 3.2rem;
 		font-weight: bold;
 	}
+	.etc_contents .contbox ul {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.etc_contents .contbox ul li {
+		width: 50%;
+	}
 }
+
