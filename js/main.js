@@ -2,10 +2,10 @@
 
   const productSwiper = new Swiper('.product_swiper', {
    // Optional parameters
-  autoplay: {
-  delay: 5000,
-  },
-  speed: 1500,
+  // autoplay: {
+  // delay: 5000,
+  // },
+  // speed: 1500,
   loop: true,
   centeredSlides: true,
    
@@ -34,10 +34,10 @@
   /* SNS 스와이퍼 */
   const snsSwiper = new Swiper('.sns_swiper', {
    // Optional parameters
-  autoplay: {
-  delay: 5000,
-  },
-  speed: 1500,
+  // autoplay: {
+  // delay: 5000,
+  // },
+  // speed: 1500,
   loop: true,
   centeredSlides: true,
   pagination: {
